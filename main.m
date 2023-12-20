@@ -37,9 +37,9 @@ bccSin = BiasedCrossCorr(sin, N-1);
 % [PSDk_noise, nuk_noise] = psdEstimator(bccSig, N, 8);
 % 
 % 
-% [PSD_noise, nu_noise] = psdEstimator(bccSig, N, 8);
-% [PSD_ar1, nu_ar1] = psdEstimator(bccAr1, N, 8);
-% [PSD_sin, nu_sin] = psdEstimator(bccSin, N, 8);
+[PSD_noise, nu_noise] = psdEstimator(bccSig, N, 1);
+[PSD_ar1, nu_ar1] = psdEstimator(bccAr1, N, 1);
+[PSD_sin, nu_sin] = psdEstimator(bccSin, N, 1);
 
 % figure(4)
 % subplot(2, 1, 1); 
@@ -111,18 +111,18 @@ bccSin = BiasedCrossCorr(sin, N-1);
 % title('sinusoid');
 
 
-% figure(6)
-% subplot(3, 1, 1); 
-% plot(nu_noise, PSD_noise); 
-% title('noise'); 
-% 
-% subplot(3, 1, 2);
-% plot(nu_ar1, PSD_ar1); 
-% title('AR1'); 
-% 
-% subplot(3, 1, 3); 
-% plot(nu_sin, PSD_sin); 
-% title('sinusoid');
+figure(6)
+subplot(3, 1, 1); 
+plot(nu_noise, PSD_noise); 
+title('noise'); 
+
+subplot(3, 1, 2);
+plot(nu_ar1, PSD_ar1); 
+title('AR1'); 
+
+subplot(3, 1, 3); 
+plot(nu_sin, PSD_sin); 
+title('sinusoid');
 % 
 % 
 % [PSD2_noise, nu2_noise] = psdEstimatorPeriodogram(noise, N);

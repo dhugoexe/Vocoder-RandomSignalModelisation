@@ -16,7 +16,7 @@
 % - v prediction error variance or innovation power
 function [a,v] = YuleWalkerSolver(Cx,K)
 
-Gx = toeplitz(Cx(1:K))
+Gx = toeplitz(Cx(1:K));
 
 %Resolution de Gx.a = Cx
 a =  Gx \ Cx(2:K+1).';

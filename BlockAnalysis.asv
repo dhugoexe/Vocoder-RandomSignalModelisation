@@ -15,7 +15,7 @@
 function [pitch, sigma2, Aopt] = BlockAnalysis(X, M, Fe)
 
     Cx = BiasedCrossCorr(X, length(X));
-    pitch = PitchDetector(Cx, Fe, 100, 400);
-    [Aopt, sigma2] = YuleWalkerSolver(Cx, M);
+    PitchDetector(Cx, Fe, 100, 400);
+
 
 end

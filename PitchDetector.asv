@@ -1,0 +1,6 @@
+function pitch = PitchDetector(Cx, Fe, Fmin, Fmax)
+
+
+
+
+end
