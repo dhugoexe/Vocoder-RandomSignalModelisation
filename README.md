@@ -13,6 +13,7 @@ The model we use, illustrated in Figure 1, is based on the idea that the speech 
 
 **Voiced:** Corresponding to vocal vibrations, modeled by a periodic impulse with random phase (for example, this occurs in vowels, as well as in the sounds ‘b’, ‘d’, and ‘z’).
  Corresponding to turbulent airflow, modeled by white noise (for example, this occurs in the sounds ‘p’, ‘t’, ‘s’, and ‘ch’).
+ 
 **Unvoiced:** Corresponding to turbulent airflow, modeled by white noise (for example, this occurs in the sounds ‘p’, ‘t’, ‘s’, and ‘ch’).
 
 <img width="784" alt="Screenshot 2024-01-17 at 12 27 38" src="https://github.com/dhugoexe/Vocoder-RandomSignalModelisation/assets/57801194/35511af4-ddca-46ab-bbd6-37a04357fc6c">
